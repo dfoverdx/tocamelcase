@@ -26,7 +26,7 @@ Without NPM:
     ``` html
     <body>
         <!-- ... -->
-        <script src="/scripts/tocamelcase.js" type="text/javascript"></script>
+        <script src="/scripts/tocamelcase.min.js" type="text/javascript"></script>
         <!-- scripts that use .toCamelCase() -->
     </body>
     ```
