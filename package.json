@@ -1,6 +1,6 @@
 {
   "name": "@dfoverdx/tocamelcase",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adds a comprehensive Camel-Case (and Pascal-Case) converter to the String's prototype",
   "main": "dist/index.min.js",
   "scripts": {
