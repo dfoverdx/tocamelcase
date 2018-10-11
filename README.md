@@ -37,7 +37,7 @@ Usage
 ### ES5 ###
 
 ``` js
-require('tocamelcase');
+require('@dfoverdx/tocamelcase');
 
 console.log('This is camel-case'.toCamelCase()); // outputs: 'thisIsCamelCase'
 console.log('This is pascal-case'.toCamelCase(true)); // outputs 'ThisIsPascalCase'
@@ -45,7 +45,7 @@ console.log('This is pascal-case'.toCamelCase(true)); // outputs 'ThisIsPascalCa
 
 ### ES6 ###
 ``` es6
-import 'tocamelcase';
+import '@dfoverdx/tocamelcase';
 
 console.log('This is camel-case'.toCamelCase()); // outputs: 'thisIsCamelCase'
 console.log('This is pascal-case'.toCamelCase(true)); // outputs 'ThisIsPascalCase'
