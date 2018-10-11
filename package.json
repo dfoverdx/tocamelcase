@@ -1,0 +1,36 @@
+{
+  "name": "tocamelcase",
+  "version": "1.0.0",
+  "description": "Adds a comprehensive Camel-Case (and Pascal-Case) converter to the String's prototype",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "build": "babel index.js | terser -m --source-map -o dist/tocamelcase.min.js && babel index.js -o dist/tocamelcase.js",
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dfoverdx/tocamelcase.git"
+  },
+  "author": "Jordan Hitch",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/register": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-minify": "^0.5.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1",
+    "terser": "^3.10.0"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "camelcase",
+    "pascalcase",
+    "camel case",
+    "pascal case"
+  ]
+}
