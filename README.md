@@ -15,7 +15,7 @@ Installation
 
 For NPM:
 
-`npm install tocamelcase`
+`npm install @dfoverdx/tocamelcase`
 
 Without NPM:
 
