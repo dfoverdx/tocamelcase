@@ -19,7 +19,7 @@ For NPM:
 
 Without NPM:
 
-1) Download `/dist/tocamelcase.min.js` from this repository
+1) Download `/dist/index.min.js` from this repository and name it something like `tocamelcase.min.js`
 2) Place it somewhere your webpage can access (e.g. `/scripts/`)
 3) Add it to your HTML file
     
