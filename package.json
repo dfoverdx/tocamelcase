@@ -1,6 +1,6 @@
 {
   "name": "@dfoverdx/tocamelcase",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Adds a comprehensive Camel-Case (and Pascal-Case) converter to the String's prototype",
   "main": "dist/index.min.js",
   "scripts": {
@@ -16,6 +16,7 @@
   "author": "Jordan Hitch",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
@@ -36,9 +37,6 @@
     "camel case",
     "pascal case"
   ],
-  "dependencies": {
-    "@babel/cli": "^7.1.5"
-  },
   "jest": {
     "moduleFileExtensions": [
       "ts",
