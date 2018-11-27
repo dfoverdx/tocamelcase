@@ -1,11 +1,13 @@
 {
   "name": "@dfoverdx/tocamelcase",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Adds a comprehensive Camel-Case (and Pascal-Case) converter to the String's prototype",
   "main": "dist/index.min.js",
   "scripts": {
-    "build": "babel index.js | terser -m --source-map -o dist/tocamelcase.min.js && babel index.js -o dist/tocamelcase.js",
-    "test": "npx jest"
+    "build": "npm run build:dev && npm run build:prod",
+    "build:dev": "tsc --build tsconfig.json",
+    "build:prod": "terser -m --source-map url -o dist/index.min.js dist/index.js ",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,13 +19,14 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
-    "babel-cli": "^6.26.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-preset-minify": "^0.5.0",
     "jest": "^23.6.0",
     "regenerator-runtime": "^0.12.1",
-    "terser": "^3.10.0"
+    "terser": "^3.10.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.1.6"
   },
   "keywords": [
     "javascript",
@@ -32,5 +35,29 @@
     "pascalcase",
     "camel case",
     "pascal case"
-  ]
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.1.5"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testRegex": "/__tests__/.*\\.(ts|tsx|js)$",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest",
+      "^.+\\.ts$": "ts-jest"
+    },
+    "coverageReporters": [
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*",
+      "!<rootDir>/src/util/supports.js",
+      "!<rootDir>/src/index.ts",
+      "!<rootDir>/src/**/*.d.ts"
+    ]
+  }
 }

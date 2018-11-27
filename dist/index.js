@@ -1,7 +1,7 @@
+"use strict";
 (function () {
-    var underscoreRegex = /(?:[^\w\s]|_)+/g, sandwichNumberRegex = /(\d)\s+(?=\d)/g, camelCaseRegex = /(?:^\s*\w|\b\w|\W+)/g;
-    String.prototype.toCamelCase = String.prototype.toCamelCase || function toCamelCase(isPascalCase) {
-        if (isPascalCase === void 0) { isPascalCase = false; }
+    const underscoreRegex = /(?:[^\w\s]|_)+/g, sandwichNumberRegex = /(\d)\s+(?=\d)/g, camelCaseRegex = /(?:^\s*\w|\b\w|\W+)/g;
+    String.prototype.toCamelCase = String.prototype.toCamelCase || function toCamelCase(isPascalCase = false) {
         if (/^\s*_[\s_]*$/g.test(this)) {
             return '_';
         }
@@ -17,3 +17,4 @@
         });
     };
 })();
+//# sourceMappingURL=index.js.map
