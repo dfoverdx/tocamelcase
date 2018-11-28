@@ -1,12 +1,12 @@
 {
   "name": "@dfoverdx/tocamelcase",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Adds a comprehensive Camel-Case (and Pascal-Case) converter to the String's prototype",
   "main": "dist/index.min.js",
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
     "build:dev": "tsc --build tsconfig.json",
-    "build:prod": "terser -m --source-map url -o dist/index.min.js dist/index.js ",
+    "build:prod": "terser --source-map \"content=inline\",\"url=inline\" -o dist/index.min.js dist/index.js",
     "test": "jest"
   },
   "repository": {
